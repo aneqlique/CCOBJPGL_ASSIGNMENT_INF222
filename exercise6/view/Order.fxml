@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderController">
+   <children>
+      <ImageView fitHeight="38.0" fitWidth="61.0" layoutX="93.0" layoutY="319.0">
+         <image>
+            <Image url="@../images/logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="55.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR RECEIPT" textAlignment="CENTER" wrappingWidth="140.0">
+         <font>
+            <Font name="Monospaced Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="170.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="__________________" textAlignment="CENTER" wrappingWidth="61.0">
+         <font>
+            <Font name="Monospaced Regular" size="4.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL :" wrappingWidth="79.0">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR ITEMS :" wrappingWidth="133.0">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="130.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QTY" textAlignment="CENTER" wrappingWidth="28.0">
+         <font>
+            <Font name="Monospaced Regular" size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="170.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE" textAlignment="CENTER" wrappingWidth="61.0">
+         <font>
+            <Font name="Monospaced Regular" size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCT NAME" textAlignment="CENTER" wrappingWidth="93.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-------------------------" textAlignment="CENTER" wrappingWidth="206.0">
+         <font>
+            <Font name="Monospaced Regular" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-------------------------" textAlignment="CENTER" wrappingWidth="206.0">
+         <font>
+            <Font name="Monospaced Regular" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you for shopping ! :D" textAlignment="CENTER" wrappingWidth="206.0">
+         <font>
+            <Font name="Monospaced Regular" size="9.0" />
+         </font>
+      </Text>
+      <VBox layoutX="19.0" layoutY="131.0" prefHeight="101.0" prefWidth="230.0">
+         <children>
+            <Pane fx:id="p1" prefHeight="31.0" prefWidth="213.0">
+               <children>
+                  <Label fx:id="name1" layoutX="7.0" layoutY="7.0" text="    " />
+                  <Label fx:id="q1" layoutX="114.0" layoutY="7.0" text="   " />
+                  <Label fx:id="price1" layoutX="169.0" layoutY="8.0" text="    " />
+               </children>
+            </Pane>
+            <Pane fx:id="p2" prefHeight="31.0" prefWidth="213.0">
+               <children>
+                  <Label fx:id="name2" layoutX="7.0" layoutY="7.0" text="    " />
+                  <Label fx:id="q2" layoutX="114.0" layoutY="8.0" text="   " />
+                  <Label fx:id="price2" layoutX="169.0" layoutY="8.0" text="   " />
+               </children>
+            </Pane>
+            <Pane fx:id="p3" prefHeight="31.0" prefWidth="213.0">
+               <children>
+                  <Label fx:id="name3" layoutX="9.0" layoutY="8.0" text="    " />
+                  <Label fx:id="q3" layoutX="113.0" layoutY="8.0" text="   " />
+                  <Label fx:id="price3" layoutX="169.0" layoutY="8.0" text="    " />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Label fx:id="total" layoutX="193.0" layoutY="267.0" prefHeight="21.0" prefWidth="50.0" text="TOTAL" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="prc311" layoutX="181.0" layoutY="264.0" prefHeight="21.0" prefWidth="11.0" text="₱" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
